@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:ital,wght@0,300;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body class="hero">
+    
+    <main class="container">
+
+        <form class="form" id="forms-itens">
+            <div class="wrapper">
+                <input type="text" class="input input-text" required placeholder="Digite o produto" id="receber-item">
+                <input type="text" class="input input-number" placeholder="Quantidade de produtos" id="receber-quantidade">
+                <input type="text" class="input input-valor" placeholder="Valor do produto em reais" id="receber-valor">
+            </div>
+                <button for="salvar" type="submit" class="button">Salvar item</button>
+        </form>
+        <div class="container-recebe-lista">
+            <div>
+                <h2 class="titulo-lista">Lista de Compras</h2>
+                <ul class="itens-lista" id="lista-itens">
+                </ul>
+            </div>
+            <section class="container-comprados-lista">
+                <h2 class="titulo-lista">Comprados</h2>
+                <ul class="itens-lista lista-itens-comprados" id="itens-comprados">
+                </ul>
+            </section>
+            <section class="container-comprados-valores">
+                <h2 class="titulo-lista">Simulação</h2>
+                <ul class="itens-lista lista-itens-valores" id="itens-valores">
+                </ul>
+            </section>
+        </div>
+        <footer class="footer">Desenvolvido por Thiago</footer>
+    </main>
+
+ <script src="./main.js"></script>
+</body>
+</html>
